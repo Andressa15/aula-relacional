@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+	<div th:each="msg : ${msgs}">
+		<p th:text="${msg}"></p>
+	</div>
+    <div 
+       <form method = "POST">
+            Nome: <input type="text" name="nome">
+            Sobrenome: <input type="text" name="sobrenome">
+            E-mail: <input type="text" name="email">
+			<p>Apelido: <input type="text" name="apelido" > </p>
+			<p>Senha: <input type="password" name="senha" > </
+            <button type="submit">Cadastrar</button>
+       </div>                      
+</body>
+</html>
+        </form>
